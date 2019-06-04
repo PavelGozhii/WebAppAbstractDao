@@ -15,9 +15,9 @@
 <div style="text-align: center;">
     <h1>Product</h1>
     <h2>
-        <a href="/product/create">Add New Product</a>
+        <a href="${pageContext.request.contextPath}/product/create">Add New Product</a>
         &nbsp; &nbsp; &nbsp;
-        <a href="/product/view">List All Product</a>
+        <a href="${pageContext.request.contextPath}/product/view">List All Product</a>
     </h2>
 </div>
 <div align="center">
@@ -34,9 +34,9 @@
                 <td><c:out value="${product.category}"/></td>
                 <td><c:out value="${product.price}"/></td>
                 <td>
-                    <a href="/product/edit?id=<c:out value='${product.id}' />">Edit</a>
+                    <a href="${pageContext.request.contextPath}/product/edit?id=<c:out value='${product.id}' />">Edit</a>
                     &nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="/product/delete?id=<c:out value='${product.id}' />">Delete</a>
+                    <a href="${pageContext.request.contextPath}/product/delete?id=<c:out value='${product.id}' />">Delete</a>
                 </td>
             </tr>
         </c:forEach>
